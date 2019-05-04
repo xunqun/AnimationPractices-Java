@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageView
+        android:id="@+id/vImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_bluetooth_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <TextView
+        android:id="@+id/vState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/l_space"
+        android:drawableLeft="@drawable/ic_state_unconnect"
+        android:drawablePadding="@dimen/m_space"
+        android:text="unconnect"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/vKoso"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/l_space"
+        android:minWidth="@dimen/min_button_width"
+        android:paddingLeft="@dimen/l_space"
+        android:paddingRight="@dimen/l_space"
+        android:text="KOSO"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vState" />
+
+    <ImageView
+        android:id="@+id/vKosoQ"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_question_mark_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vKoso"
+        app:layout_constraintStart_toEndOf="@+id/vKoso"
+        app:layout_constraintTop_toTopOf="@+id/vKoso" />
+
+    <Button
+        android:id="@+id/vObd2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/l_space"
+        android:minWidth="@dimen/min_button_width"
+        android:paddingLeft="@dimen/l_space"
+        android:paddingRight="@dimen/l_space"
+        android:text="OBD2"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vKoso" />
+
+    <ImageView
+        android:id="@+id/vObd2Q"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="8dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_question_mark_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vObd2"
+        app:layout_constraintStart_toEndOf="@+id/vObd2"
+        app:layout_constraintTop_toTopOf="@+id/vObd2" />
+
+    <FrameLayout
+        android:id="@+id/vListFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorSurfaceMain"
+        android:elevation="4dp"
+        android:minHeight="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageView
+        android:id="@+id/vImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_bluetooth_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <TextView
+        android:id="@+id/vState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/l_space"
+        android:drawableLeft="@drawable/ic_state_connecting"
+        android:drawablePadding="@dimen/m_space"
+        android:text="connecting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vImage" />
+
+    <Button
+        android:id="@+id/vKoso"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/l_space"
+
+        android:minWidth="@dimen/min_button_width"
+        android:paddingLeft="@dimen/l_space"
+        android:paddingRight="@dimen/l_space"
+        android:text="KOSO"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vState" />
+
+    <Button
+        android:id="@+id/vObd2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/l_space"
+        android:minWidth="@dimen/min_button_width"
+        android:paddingLeft="@dimen/l_space"
+        android:paddingRight="@dimen/l_space"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vKoso" />
+
+    <FrameLayout
+        android:id="@+id/vListFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/l_space"
+        android:layout_marginTop="@dimen/m_space"
+        android:layout_marginEnd="@dimen/l_space"
+        android:background="@color/colorSurfaceMain"
+        android:elevation="2dp"
+        app:layout_constraintTop_toBottomOf="@id/vState" />
+</android.support.constraint.ConstraintLayout>
