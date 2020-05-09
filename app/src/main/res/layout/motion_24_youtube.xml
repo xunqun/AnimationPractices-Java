@@ -22,6 +22,7 @@
     android:background="#444"
     app:layoutDescription="@xml/scene_24"
     tools:ignore="contentDescription"
+    app:showPaths="true"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
