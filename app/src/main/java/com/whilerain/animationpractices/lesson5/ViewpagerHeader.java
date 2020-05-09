@@ -22,7 +22,7 @@ import android.util.AttributeSet;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.viewpager.widget.ViewPager;
 
-class ViewpagerHeader extends MotionLayout implements ViewPager.OnPageChangeListener{
+class ViewpagerHeader extends MotionLayout {
 
     public ViewpagerHeader(Context context) {
         super(context);
@@ -36,19 +36,5 @@ class ViewpagerHeader extends MotionLayout implements ViewPager.OnPageChangeList
         super(context, attrs, defStyleAttr);
     }
 
-    @Override
-    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-        int numPages = 3;
-        setProgress( (position + positionOffset) / (numPages - 1));
-    }
 
-    @Override
-    public void onPageSelected(int position) {
-
-    }
-
-    @Override
-    public void onPageScrollStateChanged(int state) {
-
-    }
 }
